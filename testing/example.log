@@ -1,0 +1,474 @@
+2024-03-18 18:11:59 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrapybot)
+2024-03-18 18:11:59 [scrapy.utils.log] INFO: Versions: lxml 5.1.0.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.22621-SP0
+2024-03-18 18:12:01 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-03-18 18:12:01 [py.warnings] WARNING: c:\users\shreyu\documents\pathnavig8or\shreya_vish\venv\lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-03-18 18:12:01 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-03-18 18:12:01 [scrapy.extensions.telnet] INFO: Telnet Password: 840909108fc69ef8
+2024-03-18 18:12:02 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-03-18 18:12:02 [scrapy.crawler] INFO: Overridden settings:
+{'LOG_FILE': 'example.log',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'USER_AGENT': 'advertools/0.14.2'}
+2024-03-18 18:12:02 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-03-18 18:12:02 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-03-18 18:12:02 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-03-18 18:12:02 [scrapy.core.engine] INFO: Spider opened
+2024-03-18 18:12:02 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-03-18 18:12:02 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-03-18 18:12:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/robots.txt> (referer: None)
+2024-03-18 18:12:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/> (referer: None)
+2024-03-18 18:12:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/>
+2024-03-18 18:12:05 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://techpath.biz/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2024-03-18 18:12:05 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'en.wikipedia.org': <GET https://en.wikipedia.org/wiki/Infrastructure>
+2024-03-18 18:12:05 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.facebook.com': <GET https://www.facebook.com/techpathservices>
+2024-03-18 18:12:05 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.instagram.com': <GET https://www.instagram.com/techpathservices>
+2024-03-18 18:12:05 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.youtube.com': <GET https://www.youtube.com/@techpath-services>
+2024-03-18 18:12:05 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.linkedin.com': <GET https://www.linkedin.com/company/techpath-solutions/>
+2024-03-18 18:12:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/adca-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/adca-course/>
+2024-03-18 18:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/digital-marketing/> (referer: https://techpath.biz/)
+2024-03-18 18:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/cloud-management-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/digital-marketing/>
+2024-03-18 18:12:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/cloud-management-course/>
+2024-03-18 18:12:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/react-js-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/react-js-course/>
+2024-03-18 18:12:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/wordpress-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/wordpress-course/>
+2024-03-18 18:12:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/devops-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/database-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/devops-course/>
+2024-03-18 18:12:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/machine-learning-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/database-course/>
+2024-03-18 18:12:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/machine-learning-course/>
+2024-03-18 18:12:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/django-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/django-course/>
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/python-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/css3-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/python-course/>
+2024-03-18 18:12:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/css3-course/>
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/laravel-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/laravel-course/>
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/iot-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/html5-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/azure-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/iot-course/>
+2024-03-18 18:12:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/html5-course/>
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/ccc-course/> (referer: https://techpath.biz/adca-course/)
+2024-03-18 18:12:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/azure-course/>
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/cancellations-and-refunds-policy/> (referer: https://techpath.biz/)
+2024-03-18 18:12:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/aws-course/> (referer: https://techpath.biz/)
+2024-03-18 18:12:09 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/ccc-course/>
+2024-03-18 18:12:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/cancellations-and-refunds-policy/>
+2024-03-18 18:12:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/aws-course/>
+2024-03-18 18:12:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/deep-learning-course/> (referer: https://techpath.biz/adca-course/)
+2024-03-18 18:12:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/deep-learning-course/>
+2024-03-18 18:12:09 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://techpath.biz/bootstrap-course/> from <GET https://techpath.biz/bootstrap-course/.>
+2024-03-18 18:12:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/html-css-course/> (referer: https://techpath.biz/digital-marketing/)
+2024-03-18 18:12:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/html-css-course/>
+2024-03-18 18:12:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/customer-support-services/> (referer: https://techpath.biz/)
+2024-03-18 18:12:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/customer-support-services/>
+2024-03-18 18:12:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/terms-and-conditions/> (referer: https://techpath.biz/)
+2024-03-18 18:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/terms-and-conditions/>
+2024-03-18 18:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/web-development-course/> (referer: https://techpath.biz/digital-marketing/)
+2024-03-18 18:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/web-development-course/>
+2024-03-18 18:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/professional-services/privacy-and-policy/> (referer: https://techpath.biz/)
+2024-03-18 18:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/bootstrap-course/> (referer: https://techpath.biz/django-course/)
+2024-03-18 18:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/professional-services/privacy-and-policy/>
+2024-03-18 18:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/bootstrap-course/>
+2024-03-18 18:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/data-science-course/> (referer: https://techpath.biz/database-course/)
+2024-03-18 18:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/robotic-process-automation/> (referer: https://techpath.biz/)
+2024-03-18 18:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/data-science-course/>
+2024-03-18 18:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/git-course/> (referer: https://techpath.biz/python-course/)
+2024-03-18 18:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/robotic-process-automation/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'twitter.com': <GET https://twitter.com/share?url=https%3A%2F%2Ftechpath.biz%2Frobotic-process-automation%2F&text=Robotic%20Process%20Automation>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'pinterest.com': <GET http://pinterest.com/pin/create/button/?url=https%3A%2F%2Ftechpath.biz%2Frobotic-process-automation%2F&description=Robotic%20process%20automation%2C%20or%20RPA%2C%20is%20a%20technology%20that%20allows%20organizations%20to%20automate%20repetitive%2C%20rule-based%20digital%20tasks.&media=https%3A%2F%2Ftechpath.biz%2Fwp-content%2Fuploads%2F2023%2F09%2Frobotics.webp>
+2024-03-18 18:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/git-course/>
+2024-03-18 18:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/future-of-manufacturing/> (referer: https://techpath.biz/)
+2024-03-18 18:12:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/makar-sankranti/> (referer: https://techpath.biz/)
+2024-03-18 18:12:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/future-of-manufacturing/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.toyota-global.com': <GET https://www.toyota-global.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.ge.com': <GET https://www.ge.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'new.siemens.com': <GET https://new.siemens.com/global/en.html>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.samsung.com': <GET https://www.samsung.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.bmwgroup.com': <GET https://www.bmwgroup.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.boeing.com': <GET https://www.boeing.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.honda.com': <GET https://www.honda.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.ford.com': <GET https://www.ford.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.volkswagenag.com': <GET https://www.volkswagenag.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.lg.com': <GET https://www.lg.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.intel.com': <GET https://www.intel.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.sony.com': <GET https://www.sony.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.nestle.com': <GET https://www.nestle.com/%20>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.3m.com': <GET https://www.3m.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'us.pg.com': <GET https://us.pg.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.caterpillar.com': <GET https://www.caterpillar.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.se.com': <GET https://www.se.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.hitachi.com': <GET https://www.hitachi.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jnj.com': <GET https://www.jnj.com/>
+2024-03-18 18:12:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.basf.com': <GET https://www.basf.com/>
+2024-03-18 18:12:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/makar-sankranti/>
+2024-03-18 18:12:11 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.indianholiday.com': <GET https://www.indianholiday.com/festival/makar-sankranti/>
+2024-03-18 18:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/framework-course/> (referer: https://techpath.biz/iot-course/)
+2024-03-18 18:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/robotic/> (referer: https://techpath.biz/iot-course/)
+2024-03-18 18:12:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/framework-course/>
+2024-03-18 18:12:11 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/evolution-and-future-of-manufacturing-innovating-with-techpath-research-and-development> (referer: https://techpath.biz/)
+2024-03-18 18:12:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/robotic/>
+2024-03-18 18:12:11 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/evolution-and-future-of-manufacturing-innovating-with-techpath-research-and-development>
+2024-03-18 18:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/transforming-healthcare/> (referer: https://techpath.biz/)
+2024-03-18 18:12:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/transforming-healthcare/>
+2024-03-18 18:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/php-courses/> (referer: https://techpath.biz/)
+2024-03-18 18:12:11 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/customer-support-services/tel:8299708052> (referer: https://techpath.biz/customer-support-services/)
+2024-03-18 18:12:11 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/customer-support-services/tel:915412356039> (referer: https://techpath.biz/customer-support-services/)
+2024-03-18 18:12:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/c-language/> (referer: https://techpath.biz/deep-learning-course/)
+2024-03-18 18:12:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/php-courses/>
+2024-03-18 18:12:11 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/customer-support-services/tel:8299708052>
+2024-03-18 18:12:11 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/customer-support-services/tel:915412356039>
+2024-03-18 18:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/flask/> (referer: https://techpath.biz/)
+2024-03-18 18:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/c-language/>
+2024-03-18 18:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/flask/>
+2024-03-18 18:12:12 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://techpath.biz/adca-course/> from <GET https://techpath.biz/adca/>
+2024-03-18 18:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/Hosting-and-Deployment-Services/> (referer: https://techpath.biz/)
+2024-03-18 18:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/Hosting-and-Deployment-Services/>
+2024-03-18 18:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/ui-ux-design-services/> (referer: https://techpath.biz/)
+2024-03-18 18:12:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/it-services/> (referer: https://techpath.biz/)
+2024-03-18 18:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/ui-ux-design-services/>
+2024-03-18 18:12:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/it-services/>
+2024-03-18 18:12:12 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'maps.app.goo.gl': <GET https://maps.app.goo.gl/e1HnmypnYuQfqDbs7>
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/Digital-Marketing-Services/> (referer: https://techpath.biz/)
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/robotic-process/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/services/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/services/manufacturing/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/Digital-Marketing-Services/>
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/robotic-process/>
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/?thim_elementor_kit=course-detail> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/services/healthcare/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/author/admin/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/services/>
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/services/manufacturing/>
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/project-management-services/> (referer: https://techpath.biz/)
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/festivals/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/services/healthcare/>
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/?thim_elementor_kit=course-detail>
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/author/admin/>
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/project-management-services/>
+2024-03-18 18:12:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/festivals/>
+2024-03-18 18:12:13 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://techpath.biz/it-services/> from <GET https://techpath.biz/professional-services/it-services/>
+2024-03-18 18:12:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/contact/> (referer: https://techpath.biz/)
+2024-03-18 18:12:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/contact/>
+2024-03-18 18:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/faq/> (referer: https://techpath.biz/)
+2024-03-18 18:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/web-design-and-development/> (referer: https://techpath.biz/)
+2024-03-18 18:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/about-us/> (referer: https://techpath.biz/)
+2024-03-18 18:12:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/faq/>
+2024-03-18 18:12:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/web-design-and-development/>
+2024-03-18 18:12:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/about-us/>
+2024-03-18 18:12:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/professional-courses/> (referer: https://techpath.biz/)
+2024-03-18 18:12:14 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.zaubacorp.com': <GET https://www.zaubacorp.com/company/TECHPATH-RESEARCH-AND-DEVELOPMENT-PRIVATE-LIMITED/U72900UP2022PTC171476>
+2024-03-18 18:12:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/professional-courses/>
+2024-03-18 18:12:15 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/tally-course/> (referer: https://techpath.biz/professional-courses/)
+2024-03-18 18:12:15 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/java-course/> (referer: https://techpath.biz/professional-courses/)
+2024-03-18 18:12:15 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/professional-courses/tel:8299708052> (referer: https://techpath.biz/professional-courses/)
+2024-03-18 18:12:15 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/tally-course/>
+2024-03-18 18:12:15 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/java-course/>
+2024-03-18 18:12:15 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/professional-courses/tel:8299708052>
+2024-03-18 18:12:15 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-03-18 18:12:15 [scrapy.extensions.feedexport] INFO: Stored jl feed (60 items) in: output.jl
+2024-03-18 18:12:15 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 16233,
+ 'downloader/request_count': 64,
+ 'downloader/request_method_count/GET': 64,
+ 'downloader/response_bytes': 1509094,
+ 'downloader/response_count': 64,
+ 'downloader/response_status_count/200': 53,
+ 'downloader/response_status_count/301': 3,
+ 'downloader/response_status_count/404': 8,
+ 'dupefilter/filtered': 1987,
+ 'elapsed_time_seconds': 13.127001,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 3, 18, 12, 42, 15, 651511, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 6946974,
+ 'httpcompression/response_count': 60,
+ 'item_scraped_count': 60,
+ 'log_count/DEBUG': 156,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'offsite/domains': 30,
+ 'offsite/filtered': 286,
+ 'request_depth_max': 4,
+ 'response_received_count': 61,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 63,
+ 'scheduler/dequeued/memory': 63,
+ 'scheduler/enqueued': 63,
+ 'scheduler/enqueued/memory': 63,
+ 'start_time': datetime.datetime(2024, 3, 18, 12, 42, 2, 524510, tzinfo=datetime.timezone.utc)}
+2024-03-18 18:12:15 [scrapy.core.engine] INFO: Spider closed (finished)
+2024-03-18 18:13:03 [scrapy.utils.log] INFO: Scrapy 2.11.1 started (bot: scrapybot)
+2024-03-18 18:13:03 [scrapy.utils.log] INFO: Versions: lxml 5.1.0.0, libxml2 2.10.3, cssselect 1.2.0, parsel 1.9.0, w3lib 2.1.2, Twisted 24.3.0, Python 3.8.0 (tags/v3.8.0:fa919fd, Oct 14 2019, 19:37:50) [MSC v.1916 64 bit (AMD64)], pyOpenSSL 24.1.0 (OpenSSL 3.2.1 30 Jan 2024), cryptography 42.0.5, Platform Windows-10-10.0.22621-SP0
+2024-03-18 18:13:05 [scrapy.addons] INFO: Enabled addons:
+[]
+2024-03-18 18:13:05 [py.warnings] WARNING: c:\users\shreyu\documents\pathnavig8or\shreya_vish\venv\lib\site-packages\scrapy\utils\request.py:254: ScrapyDeprecationWarning: '2.6' is a deprecated value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting.
+
+It is also the default value. In other words, it is normal to get this warning if you have not defined a value for the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting. This is so for backward compatibility reasons, but it will change in a future version of Scrapy.
+
+See the documentation of the 'REQUEST_FINGERPRINTER_IMPLEMENTATION' setting for information on how to handle this deprecation.
+  return cls(crawler)
+
+2024-03-18 18:13:05 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.selectreactor.SelectReactor
+2024-03-18 18:13:05 [scrapy.extensions.telnet] INFO: Telnet Password: ea67ee858774e4f2
+2024-03-18 18:13:05 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.feedexport.FeedExporter',
+ 'scrapy.extensions.logstats.LogStats']
+2024-03-18 18:13:05 [scrapy.crawler] INFO: Overridden settings:
+{'LOG_FILE': 'example.log',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'USER_AGENT': 'advertools/0.14.2'}
+2024-03-18 18:13:06 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2024-03-18 18:13:06 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2024-03-18 18:13:06 [scrapy.middleware] INFO: Enabled item pipelines:
+[]
+2024-03-18 18:13:06 [scrapy.core.engine] INFO: Spider opened
+2024-03-18 18:13:06 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2024-03-18 18:13:06 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2024-03-18 18:13:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/robots.txt> (referer: None)
+2024-03-18 18:13:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/> (referer: None)
+2024-03-18 18:13:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/>
+2024-03-18 18:13:07 [scrapy.dupefilters] DEBUG: Filtered duplicate request: <GET https://techpath.biz/> - no more duplicates will be shown (see DUPEFILTER_DEBUG to show all duplicates)
+2024-03-18 18:13:07 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'en.wikipedia.org': <GET https://en.wikipedia.org/wiki/Infrastructure>
+2024-03-18 18:13:07 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.facebook.com': <GET https://www.facebook.com/techpathservices>
+2024-03-18 18:13:07 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.instagram.com': <GET https://www.instagram.com/techpathservices>
+2024-03-18 18:13:07 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.youtube.com': <GET https://www.youtube.com/@techpath-services>
+2024-03-18 18:13:07 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.linkedin.com': <GET https://www.linkedin.com/company/techpath-solutions/>
+2024-03-18 18:13:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/adca-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/adca-course/>
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/django-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/django-course/>
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/css3-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/css3-course/>
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/wordpress-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/react-js-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/devops-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/python-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/machine-learning-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/database-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/digital-marketing/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/cloud-management-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/wordpress-course/>
+2024-03-18 18:13:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/react-js-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/python-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/devops-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/database-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/machine-learning-course/>
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/iot-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/deep-learning-course/> (referer: https://techpath.biz/adca-course/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/azure-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/aws-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/laravel-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/cancellations-and-refunds-policy/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/html5-course/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/digital-marketing/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/cloud-management-course/>
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/html-css-course/> (referer: https://techpath.biz/django-course/)
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/iot-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/laravel-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/aws-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/azure-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/deep-learning-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/html5-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/cancellations-and-refunds-policy/>
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/bootstrap-course/> (referer: https://techpath.biz/django-course/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/terms-and-conditions/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/professional-services/privacy-and-policy/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/robotic-process-automation/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/future-of-manufacturing/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/web-development-course/> (referer: https://techpath.biz/django-course/)
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/customer-support-services/> (referer: https://techpath.biz/)
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/html-css-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/terms-and-conditions/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/bootstrap-course/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/robotic-process-automation/>
+2024-03-18 18:13:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/professional-services/privacy-and-policy/>
+2024-03-18 18:13:09 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/ccc-course/> (referer: https://techpath.biz/adca-course/)
+2024-03-18 18:13:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'twitter.com': <GET https://twitter.com/share?url=https%3A%2F%2Ftechpath.biz%2Frobotic-process-automation%2F&text=Robotic%20Process%20Automation>
+2024-03-18 18:13:09 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'pinterest.com': <GET http://pinterest.com/pin/create/button/?url=https%3A%2F%2Ftechpath.biz%2Frobotic-process-automation%2F&description=Robotic%20process%20automation%2C%20or%20RPA%2C%20is%20a%20technology%20that%20allows%20organizations%20to%20automate%20repetitive%2C%20rule-based%20digital%20tasks.&media=https%3A%2F%2Ftechpath.biz%2Fwp-content%2Fuploads%2F2023%2F09%2Frobotics.webp>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/future-of-manufacturing/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/web-development-course/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/customer-support-services/>
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/data-science-course/> (referer: https://techpath.biz/database-course/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/transforming-healthcare/> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/php-courses/> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/git-course/> (referer: https://techpath.biz/python-course/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/makar-sankranti/> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.toyota-global.com': <GET https://www.toyota-global.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.ge.com': <GET https://www.ge.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'new.siemens.com': <GET https://new.siemens.com/global/en.html>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.samsung.com': <GET https://www.samsung.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.bmwgroup.com': <GET https://www.bmwgroup.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.boeing.com': <GET https://www.boeing.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.honda.com': <GET https://www.honda.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.ford.com': <GET https://www.ford.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.volkswagenag.com': <GET https://www.volkswagenag.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.lg.com': <GET https://www.lg.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.intel.com': <GET https://www.intel.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.sony.com': <GET https://www.sony.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.nestle.com': <GET https://www.nestle.com/%20>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.3m.com': <GET https://www.3m.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'us.pg.com': <GET https://us.pg.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.caterpillar.com': <GET https://www.caterpillar.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.se.com': <GET https://www.se.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.hitachi.com': <GET https://www.hitachi.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.jnj.com': <GET https://www.jnj.com/>
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.basf.com': <GET https://www.basf.com/>
+2024-03-18 18:13:10 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://techpath.biz/bootstrap-course/> from <GET https://techpath.biz/bootstrap-course/.>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/ccc-course/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/transforming-healthcare/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/data-science-course/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/php-courses/>
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/evolution-and-future-of-manufacturing-innovating-with-techpath-research-and-development> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/flask/> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/git-course/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/makar-sankranti/>
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/framework-course/> (referer: https://techpath.biz/iot-course/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/robotic/> (referer: https://techpath.biz/iot-course/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/it-services/> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/ui-ux-design-services/> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/Hosting-and-Deployment-Services/> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/c-language/> (referer: https://techpath.biz/deep-learning-course/)
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.indianholiday.com': <GET https://www.indianholiday.com/festival/makar-sankranti/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/evolution-and-future-of-manufacturing-innovating-with-techpath-research-and-development>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/flask/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/robotic/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/framework-course/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/it-services/>
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/Digital-Marketing-Services/> (referer: https://techpath.biz/)
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/Hosting-and-Deployment-Services/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/ui-ux-design-services/>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/c-language/>
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/services/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/robotic-process/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/?thim_elementor_kit=course-detail> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/services/manufacturing/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/services/healthcare/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:13:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/category/festivals/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:13:10 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'maps.app.goo.gl': <GET https://maps.app.goo.gl/e1HnmypnYuQfqDbs7>
+2024-03-18 18:13:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/Digital-Marketing-Services/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/robotic-process/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/services/>
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/customer-support-services/tel:8299708052> (referer: https://techpath.biz/customer-support-services/)
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/services/healthcare/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/services/manufacturing/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/?thim_elementor_kit=course-detail>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/category/festivals/>
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/author/admin/> (referer: https://techpath.biz/robotic-process-automation/)
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/project-management-services/> (referer: https://techpath.biz/)
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/web-design-and-development/> (referer: https://techpath.biz/)
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/contact/> (referer: https://techpath.biz/)
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/faq/> (referer: https://techpath.biz/)
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/customer-support-services/tel:8299708052>
+2024-03-18 18:13:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://techpath.biz/adca-course/> from <GET https://techpath.biz/adca/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/project-management-services/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/author/admin/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/web-design-and-development/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/contact/>
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/customer-support-services/tel:915412356039> (referer: https://techpath.biz/customer-support-services/)
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/professional-courses/> (referer: https://techpath.biz/)
+2024-03-18 18:13:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://techpath.biz/about-us/> (referer: https://techpath.biz/)
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/faq/>
+2024-03-18 18:13:11 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (301) to <GET https://techpath.biz/it-services/> from <GET https://techpath.biz/professional-services/it-services/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/customer-support-services/tel:915412356039>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/about-us/>
+2024-03-18 18:13:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://techpath.biz/professional-courses/>
+2024-03-18 18:13:11 [scrapy.spidermiddlewares.offsite] DEBUG: Filtered offsite request to 'www.zaubacorp.com': <GET https://www.zaubacorp.com/company/TECHPATH-RESEARCH-AND-DEVELOPMENT-PRIVATE-LIMITED/U72900UP2022PTC171476>
+2024-03-18 18:13:12 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/java-course/> (referer: https://techpath.biz/professional-courses/)
+2024-03-18 18:13:12 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/java-course/>
+2024-03-18 18:13:12 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/professional-courses/tel:8299708052> (referer: https://techpath.biz/professional-courses/)
+2024-03-18 18:13:12 [scrapy.core.engine] DEBUG: Crawled (404) <GET https://techpath.biz/tally-course/> (referer: https://techpath.biz/professional-courses/)
+2024-03-18 18:13:12 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/professional-courses/tel:8299708052>
+2024-03-18 18:13:12 [scrapy.core.scraper] DEBUG: Scraped from <404 https://techpath.biz/tally-course/>
+2024-03-18 18:13:12 [scrapy.core.engine] INFO: Closing spider (finished)
+2024-03-18 18:13:12 [scrapy.extensions.feedexport] INFO: Stored jl feed (60 items) in: output.jl
+2024-03-18 18:13:12 [scrapy.statscollectors] INFO: Dumping Scrapy stats:
+{'downloader/request_bytes': 16225,
+ 'downloader/request_count': 64,
+ 'downloader/request_method_count/GET': 64,
+ 'downloader/response_bytes': 1500650,
+ 'downloader/response_count': 64,
+ 'downloader/response_status_count/200': 53,
+ 'downloader/response_status_count/301': 3,
+ 'downloader/response_status_count/404': 8,
+ 'dupefilter/filtered': 1987,
+ 'elapsed_time_seconds': 6.711487,
+ 'feedexport/success_count/FileFeedStorage': 1,
+ 'finish_reason': 'finished',
+ 'finish_time': datetime.datetime(2024, 3, 18, 12, 43, 12, 828989, tzinfo=datetime.timezone.utc),
+ 'httpcompression/response_bytes': 6946974,
+ 'httpcompression/response_count': 60,
+ 'item_scraped_count': 60,
+ 'log_count/DEBUG': 156,
+ 'log_count/INFO': 11,
+ 'log_count/WARNING': 1,
+ 'offsite/domains': 30,
+ 'offsite/filtered': 286,
+ 'request_depth_max': 4,
+ 'response_received_count': 61,
+ 'robotstxt/request_count': 1,
+ 'robotstxt/response_count': 1,
+ 'robotstxt/response_status_count/200': 1,
+ 'scheduler/dequeued': 63,
+ 'scheduler/dequeued/memory': 63,
+ 'scheduler/enqueued': 63,
+ 'scheduler/enqueued/memory': 63,
+ 'start_time': datetime.datetime(2024, 3, 18, 12, 43, 6, 117502, tzinfo=datetime.timezone.utc)}
+2024-03-18 18:13:12 [scrapy.core.engine] INFO: Spider closed (finished)
